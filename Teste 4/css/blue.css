@@ -1,0 +1,42 @@
+body {
+    background-color: inherit;
+    color: inherit;
+}
+caption {
+    font-family: fantasy, sans-serif;
+    font-size: 0.8em;
+    caption-side: bottom;
+}
+#teams {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: inherit;
+    color: inherit;
+    outline: #2345f1 dotted thick;
+}
+#teams td, #teams th {
+    font-size: 1em;
+    border: 1px solid #334487;
+    padding: 5px 8px 5px 10px;
+    background-color: inherit;
+    color: inherit;
+}
+#teams th {
+    font-size: 1.2em;
+    text-align: left;
+    background-color: lightsteelblue;
+    color: azure;
+}
+#teams .place {
+    background-color: aquamarine;
+    color: black;
+    width: 5%;
+}
+#teams .team {
+    width: 45%;
+}
+#teams tr.alt td {
+    background-color: paleturquoise;
+    color: #002080;
+}

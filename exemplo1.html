@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSS3 - borders</title>
+
+<style>
+div
+{
+width:800px;	/* but don't forget *height* if necessary */
+padding:10px 40px;
+}
+div#canto		/* Canto arredondado */
+{
+border:2px solid #34bbf2;
+background:#f0af11;
+border-radius:20px;		/* Raio do canto arredondado: 20px */
+}
+div#sombra		/* Sombra */
+{
+background-color:teal;
+box-shadow:12px 12px 6px #888888;	/* dimensões da sombra: 12px(x),12px(y),6px(canto),#888888(cor) */
+}
+div#imagem1		/* Imagem como borda (round) */
+{
+border:20px solid transparent;
+-webkit-border-image:url(./imagens/borda.jpg) 32 32 round;	/* Safari e Chrome */
+-o-border-image:url(./imagens/borda.jpg) 32 32 round;			/* Opera */
+border-image:url(./imagens/borda.jpg) 32 32 round;			/* url(imagem), 32(x), 32(y), round(estilo) */
+}
+div#imagem2		/* Imagem como borda (strech) */
+{
+border:20px solid transparent;
+-webkit-border-image:url(./imagens/borda.jpg) 32 32 stretch;	/* Safari e Chrome */
+-o-border-image:url(./imagens/borda.jpg) 32 32 stretch;		/* Opera */
+border-image:url(./imagens/borda.jpg) 32 32 stretch;			/* url(imagem), 32(x), 32(y), round(estilo) */
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Canto arredondado -->
+<div id="canto">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget libero a dui rutrum cursus vel nec enim. Fusce eget viverra massa. Quisque tincidunt nunc sed felis auctor malesuada. Ut tempor, lorem quis blandit rhoncus, elit tortor laoreet eros, id eleifend quam mi sit amet erat. Quisque ac bibendum lacus. Curabitur lobortis nisi sed nunc iaculis in vestibulum dui gravida. Donec ligula odio, congue vel eleifend at, tempus eu metus. Curabitur iaculis interdum feugiat. Fusce ornare, lacus ut rhoncus lacinia, enim justo condimentum tellus, non auctor velit arcu quis elit. Quisque eget nisl sem, a convallis purus. Nulla vehicula imperdiet massa ut molestie. Ut facilisis iaculis justo, in viverra libero adipiscing et. Vivamus ut mattis ante.
+
+Donec urna erat, dapibus eu posuere ut, dictum at augue. Vestibulum aliquet nibh at orci fringilla bibendum. Nulla facilisi. Phasellus nec nunc lorem, a hendrerit ante. Morbi gravida urna ac nulla lacinia eu dignissim lectus ornare. Pellentesque non imperdiet odio. Phasellus faucibus eros pulvinar felis blandit placerat. Curabitur imperdiet varius eros ac adipiscing. Fusce sed velit ut turpis ultrices iaculis. Aenean tortor justo, venenatis a semper nec, aliquam sit amet erat.
+
+Nam pulvinar fermentum dui, imperdiet interdum sapien feugiat a. Etiam in mauris ipsum, in interdum libero. Ut augue elit, faucibus ac dapibus semper, varius at eros. Morbi eu nulla ligula. Duis faucibus mi at ligula condimentum dignissim. Suspendisse feugiat eros lobortis mauris consequat a dignissim dolor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eleifend scelerisque risus, vel tempus mauris dictum ut. Curabitur ac orci dolor. Nulla vitae velit purus. Nullam fringilla elementum consequat. </div><br>
+
+<!-- Sombra -->
+<div id="sombra">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget libero a dui rutrum cursus vel nec enim. Fusce eget viverra massa. Quisque tincidunt nunc sed felis auctor malesuada. Ut tempor, lorem quis blandit rhoncus, elit tortor laoreet eros, id eleifend quam mi sit amet erat. Quisque ac bibendum lacus. Curabitur lobortis nisi sed nunc iaculis in vestibulum dui gravida. Donec ligula odio, congue vel eleifend at, tempus eu metus. Curabitur iaculis interdum feugiat. Fusce ornare, lacus ut rhoncus lacinia, enim justo condimentum tellus, non auctor velit arcu quis elit. Quisque eget nisl sem, a convallis purus. Nulla vehicula imperdiet massa ut molestie. Ut facilisis iaculis justo, in viverra libero adipiscing et. Vivamus ut mattis ante.
+
+Donec urna erat, dapibus eu posuere ut, dictum at augue. Vestibulum aliquet nibh at orci fringilla bibendum. Nulla facilisi. Phasellus nec nunc lorem, a hendrerit ante. Morbi gravida urna ac nulla lacinia eu dignissim lectus ornare. Pellentesque non imperdiet odio. Phasellus faucibus eros pulvinar felis blandit placerat. Curabitur imperdiet varius eros ac adipiscing. Fusce sed velit ut turpis ultrices iaculis. Aenean tortor justo, venenatis a semper nec, aliquam sit amet erat.
+
+Nam pulvinar fermentum dui, imperdiet interdum sapien feugiat a. Etiam in mauris ipsum, in interdum libero. Ut augue elit, faucibus ac dapibus semper, varius at eros. Morbi eu nulla ligula. Duis faucibus mi at ligula condimentum dignissim. Suspendisse feugiat eros lobortis mauris consequat a dignissim dolor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eleifend scelerisque risus, vel tempus mauris dictum ut. Curabitur ac orci dolor. Nulla vitae velit purus. Nullam fringilla elementum consequat. 
+</div><br>
+
+<!-- Imagem como borda (round) -->
+<div id="imagem1">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget libero a dui rutrum cursus vel nec enim. Fusce eget viverra massa. Quisque tincidunt nunc sed felis auctor malesuada. Ut tempor, lorem quis blandit rhoncus, elit tortor laoreet eros, id eleifend quam mi sit amet erat. Quisque ac bibendum lacus. Curabitur lobortis nisi sed nunc iaculis in vestibulum dui gravida. Donec ligula odio, congue vel eleifend at, tempus eu metus. Curabitur iaculis interdum feugiat. Fusce ornare, lacus ut rhoncus lacinia, enim justo condimentum tellus, non auctor velit arcu quis elit. Quisque eget nisl sem, a convallis purus. Nulla vehicula imperdiet massa ut molestie. Ut facilisis iaculis justo, in viverra libero adipiscing et. Vivamus ut mattis ante.
+
+Donec urna erat, dapibus eu posuere ut, dictum at augue. Vestibulum aliquet nibh at orci fringilla bibendum. Nulla facilisi. Phasellus nec nunc lorem, a hendrerit ante. Morbi gravida urna ac nulla lacinia eu dignissim lectus ornare. Pellentesque non imperdiet odio. Phasellus faucibus eros pulvinar felis blandit placerat. Curabitur imperdiet varius eros ac adipiscing. Fusce sed velit ut turpis ultrices iaculis. Aenean tortor justo, venenatis a semper nec, aliquam sit amet erat.
+
+Nam pulvinar fermentum dui, imperdiet interdum sapien feugiat a. Etiam in mauris ipsum, in interdum libero. Ut augue elit, faucibus ac dapibus semper, varius at eros. Morbi eu nulla ligula. Duis faucibus mi at ligula condimentum dignissim. Suspendisse feugiat eros lobortis mauris consequat a dignissim dolor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eleifend scelerisque risus, vel tempus mauris dictum ut. Curabitur ac orci dolor. Nulla vitae velit purus. Nullam fringilla elementum consequat. </div><br>
+
+<!-- Imagem como borda (stretch) -->
+<div id="imagem2">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget libero a dui rutrum cursus vel nec enim. Fusce eget viverra massa. Quisque tincidunt nunc sed felis auctor malesuada. Ut tempor, lorem quis blandit rhoncus, elit tortor laoreet eros, id eleifend quam mi sit amet erat. Quisque ac bibendum lacus. Curabitur lobortis nisi sed nunc iaculis in vestibulum dui gravida. Donec ligula odio, congue vel eleifend at, tempus eu metus. Curabitur iaculis interdum feugiat. Fusce ornare, lacus ut rhoncus lacinia, enim justo condimentum tellus, non auctor velit arcu quis elit. Quisque eget nisl sem, a convallis purus. Nulla vehicula imperdiet massa ut molestie. Ut facilisis iaculis justo, in viverra libero adipiscing et. Vivamus ut mattis ante.
+
+Donec urna erat, dapibus eu posuere ut, dictum at augue. Vestibulum aliquet nibh at orci fringilla bibendum. Nulla facilisi. Phasellus nec nunc lorem, a hendrerit ante. Morbi gravida urna ac nulla lacinia eu dignissim lectus ornare. Pellentesque non imperdiet odio. Phasellus faucibus eros pulvinar felis blandit placerat. Curabitur imperdiet varius eros ac adipiscing. Fusce sed velit ut turpis ultrices iaculis. Aenean tortor justo, venenatis a semper nec, aliquam sit amet erat.
+
+Nam pulvinar fermentum dui, imperdiet interdum sapien feugiat a. Etiam in mauris ipsum, in interdum libero. Ut augue elit, faucibus ac dapibus semper, varius at eros. Morbi eu nulla ligula. Duis faucibus mi at ligula condimentum dignissim. Suspendisse feugiat eros lobortis mauris consequat a dignissim dolor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eleifend scelerisque risus, vel tempus mauris dictum ut. Curabitur ac orci dolor. Nulla vitae velit purus. Nullam fringilla elementum consequat. </div>
+
+</body>
+
+</html>

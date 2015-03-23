@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>CSS Navigation List</title>
+    <meta charset="utf-8" />
+    <base href="../imagens/" />
+    
+    <style>
+        /* Lista de botões de navegação */
+        #navlist {
+            /* position:relative permite posicionamento no item pai */
+            position: relative;
+        }
+        /* Todos os links */
+        #navlist li {
+            /* margem e espaçamento serão zerados */
+            margin: 0; padding: 0;
+            /* Removendo os ícones de lista */
+            list-style: none;
+            /* Posicionando absolutamente o item */
+            position: absolute;
+            top: 0;
+        }
+        #navlist li, #navlist a /* definindo altura de 44px para os links */
+        {
+            height: 44px;
+            display: block; /*Links são itens de bloco*/
+        }
+        
+        /* Home button */
+        #home {
+            left: 0px;
+            width: 46px;
+            background: url('img_navsprites_hover.gif') 0 0;
+        }
+        #home a:hover {
+            background: url('img_navsprites_hover.gif') 0 -45px;
+        }
+        /* Previous button */
+        #prev {
+            left: 66px;
+            width: 43px;
+            background: url('img_navsprites_hover.gif') -47px 0;
+        }
+        #prev a:hover {
+            background: url('img_navsprites_hover.gif') -47px -45px;
+        }
+        /* Next button */
+        #next {
+            left: 129px;
+            width: 43px;
+            background: url('img_navsprites_hover.gif') -91px 0;
+        }
+        #next a:hover {
+            background: url('img_navsprites_hover.gif') -91px -45px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<ul id="navlist">
+    <li id="home"><a href="#"></a></li>
+    <li id="prev"><a href="#"></a></li>
+    <li id="next"><a href="#"></a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+html, body {
+	width: 100%; height: 100%;
+	margin: 5%;
+	padding: 0px;
+	background-color: #E0E4EB;
+	color: #080B16;
+}
+/* container(div) */
+#container {
+	width: 90%; height: 100%;
+	padding:0px; margin: 0px;
+	border: medium solid #5D255E;
+}
+/* header(div): menu superior */
+#header {
+	width:100%; height:20%;
+	text-align: center;
+	background-color: #373E4F;
+	color: #B8BECC;
+}
+#header h1 {
+	display:inline-table;
+}
+#header ul {
+	list-style-type: none;
+}
+#header ul li {
+	display: inline;
+}
+#header ul li a {
+	background-color: #828393;
+	color: #080B16;
+	border: medium solid #737B8E;
+	width: 150px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	vertical-align:middle;
+	padding:5px;
+}
+/* nav(div): barra lateral de navegação */
+#nav {
+	width: 30%; height:75%;
+	margin:0px; padding: 0px;
+	background-color: #BA8F78;
+	color: #10131D;
+	float:left;
+}
+#nav ul {
+	list-style-type: none;
+	margin: 0px; padding: 0px;
+}
+#nav ul li span {
+	display: block;
+	background-color: inherit;
+	color:#03050B;
+	border-bottom: medium solid #03050B;
+	width:100%; height:25%;
+	font: bolder italic 20px cursive,sans-serif;
+	padding:5px 0px;
+}
+/* content(div): página da web a ser exibida */
+#content {
+	width:70%; height: 75%;
+	float: left;
+}
+#content iframe{
+	width:100%; height:100%;
+	border-style: none;
+}
+/* footer(div): rodapé da página, com os créditos */
+#footer {
+	width:100%; height:5%;
+	float: left;
+	background-color: #0A0B15;
+	color: #B8BECC;
+	text-align: center;
+	clear: both;
+}

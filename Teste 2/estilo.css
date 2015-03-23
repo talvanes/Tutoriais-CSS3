@@ -1,0 +1,75 @@
+body {
+    font-size: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    border: 2px solid black;
+}
+p {
+    font-size: 1em;
+}
+hr {
+    width: 96%;
+}
+
+/* All web-safe font combinations extracted from w3schools.com */
+
+/* Serif */
+h1.serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+}
+
+.georgia {
+    font-family: Georgia, serif;
+}
+.palatino {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+}
+.times {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Sans- Serif */
+h1.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.arial_black {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+.comic {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.impact {
+    font-family: Impact, Charcoal, sans-serif;
+}
+.lucida_sans {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.tahoma {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.trebuchet {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.verdana {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Monospace */
+h1.monospace {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2em;
+}
+
+.courier {
+    font-family: "Courier New", Courier, monospace;
+}
+.lucida_console {
+    font-family: "Lucida Console", Monaco, monospace;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Horizontal and Vertical Menus</title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    /* Ambos os menus */
+    ul.horizontal, ul.vertical {
+        list-style-type: none;
+        margin: 0; padding: 0;
+    }
+    /* Menu horizontal (floating) */
+    ul.horizontal li {
+        float: left;
+    }
+    ul.horizontal a:link, ul.horizontal a:visited {
+        display: block;
+        width: 6em;
+        /* Mais código para enfeitar o menu */
+        background-color: rgb(55, 233, 145);
+        color: rgb(186, 20, 43);
+        text-decoration: none;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0.2em 0;
+        border-right: 2px solid white;
+    }
+    ul.horizontal a:hover, ul.horizontal a:active {
+        background-color: rgb(201, 23, 111);
+        color: rgb(70, 236, 213);
+    }
+    /* Menu vertical */
+    ul.vertical a:link, ul.vertical a:visited {  /* a: Elemento inline */
+        display: block;
+        width: 6em;
+        /* Mais código para enfeitar o menu */
+        background-color: rgb(164, 100, 80);
+        color: rgb(200, 200, 200);
+        text-decoration: none;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0.2em 0;
+        border-bottom: 2px solid white;
+    }
+    ul.vertical a:hover, ul.vertical a:active {
+        background-color: rgb(192, 156, 176);
+        color: rgb(56, 56, 56);
+    }
+</style>
+
+<body>
+
+<!-- HTML base code: horizontal menu -->
+<ul class="horizontal">
+    <li><a href="#test1">Test01</a></li>
+    <li><a href="#test2">Test02</a></li>
+    <li><a href="#test3">Test03</a></li>
+    <li><a href="#test4">Test04</a></li>
+    <li><a href="#test5">Test05</a></li>
+    <li><a href="#test6">Test06</a></li>
+    <li><a href="#test7">Test07</a></li>
+    <li><a href="#test8">Test08</a></li>
+    <li><a href="#test9">Test09</a></li>
+</ul>
+
+<!-- HTML base code: vertical menu -->
+<ul class="vertical">
+    <li><a href="#test1">Test01</a></li>
+    <li><a href="#test2">Test02</a></li>
+    <li><a href="#test3">Test03</a></li>
+    <li><a href="#test4">Test04</a></li>
+    <li><a href="#test5">Test05</a></li>
+    <li><a href="#test6">Test06</a></li>
+    <li><a href="#test7">Test07</a></li>
+    <li><a href="#test8">Test08</a></li>
+    <li><a href="#test9">Test09</a></li>
+</ul>
+
+</body>
+</html>

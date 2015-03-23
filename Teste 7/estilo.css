@@ -1,0 +1,29 @@
+html, body {
+	width:100%; height:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Missing (CSS display:none) */
+.missing {
+	display: none;
+}
+/* Hidden (CSS visibility:hidden) */
+.hidden {
+	visibility: hidden;
+}
+
+/* How to change the element's behaviour (e.g. display inline elements as block ones, or vice versa) */
+.inline {
+	display: inline;
+	border: 2px dashed black;
+}
+.block {
+	display: block;
+	border: 2px dashed black;
+}
+
+/* How to collapse elements (CSS visibility:collapse) */
+.collapsed {
+	visibility: collapse;
+}

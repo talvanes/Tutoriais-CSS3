@@ -1,0 +1,41 @@
+body {
+    background-color: inherit;
+    color: inherit;
+}
+caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    caption-side: bottom;
+}
+#teams {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: teal;
+    color: cadertblue;
+    outline: #2a69dd dotted medium;
+}
+#teams td, #teams th {
+    font-size: 1em;
+    border: 1.5px solid darkgreen;
+    padding: 5px 8px 5px 10px;
+}
+#teams th {
+    font-size: 1.2em;
+    text-align: left;
+    background-color: firebrick;
+    color: seagreen;
+}
+#teams .place {
+    background-color: mediumaquamarine;
+    color: maroon;
+    width: 5%;
+}
+#teams .team {
+    width: 45%;
+}
+#teams tr.alt td {
+    background-color: lavender;
+    color: deeppink;
+    font-weight: 900;
+}

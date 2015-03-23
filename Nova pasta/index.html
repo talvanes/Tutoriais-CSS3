@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>transformações 3D</title>
+		<style>
+			div {
+				width: 200px; height: 100px;
+				border: 1px solid black;
+				perspective: 50%;
+				perspective-origin: 50%;
+			}
+			
+			#div1 {background-color: springgreen;}
+			#div2 {background-color: dodgerblue;}
+			#div3 {background-color: lightgoldenrodyellow; }
+			
+			.rotacaoX {
+				-webkit-transform: rotateX(60deg);
+				-moz-transform: rotateX(60deg);
+				-o-transform: rotateX(60deg);
+				transform: rotateX(60deg);
+			}
+			.rotacaoY {
+				-webkit-transform: rotateY(60deg);
+				-moz-transform: rotateY(60deg);
+				-o-transform: rotateY(60deg);
+				transform: rotateY(60deg);
+			}
+			.rotacaoZ {
+				-webkit-transform: rotateZ(60deg);
+				-moz-transform: rotateZ(60deg);
+				-o-transform: rotateZ(60deg);
+				transform: rotateZ(60deg);
+			}
+			
+			.escalaX {
+				-webkit-transform: scaleX(25px);
+				-moz-transform: scaleX(25px);
+				-o-transform: scaleX(25px);
+				transform: scaleX(25px);
+			}
+			.escalaY {
+				-webkit-transform: scaleY(5%);
+				-moz-transform: scaleY(5%);
+				-o-transform: scaleY(5%);
+				transform: scaleY(5%);
+			}
+			.escalaZ {
+				-webkit-transform: scaleZ(40px);
+				-moz-transform: scaleZ(40px);
+				-o-transform: scaleZ(40px);
+				transform: scaleZ(40px);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div id="div1" class="rotacaoX escalaZ escalaX">Eu fui transformado!</div>
+		</div>
+		<div>
+			<div id="div2" class="rotacaoY escalaX escalaY">Fui transformado também!</div>
+		</div>
+		<div>
+			<div id="div3" class="rotacaoZ escalaY escalaZ">Fui transformado também!</div>
+		</div>
+	</body>
+</html>

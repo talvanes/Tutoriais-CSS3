@@ -1,0 +1,32 @@
+body {
+    color: dodgerblue;
+    background-color: lightblue;
+    font: normal 500 1em/2em "Tahoma",sans-serif;
+    border: thick solid palevioletred;
+    margin: 2.5cm 2cm;
+    padding: 2.5cm 2cm 2.4cm;
+}
+div {
+    text-align: justify;
+}
+div.lipsum {
+    background: url("../imagens/fundo2.jpg") no-repeat left top;
+    border-color: darkblue;
+    border-style: solid;
+    margin: 4% 0px;
+    padding: 1em 10px;
+}
+div.inner {
+    margin-bottom: 1.2em;
+    padding: 1em 0px;
+    font: italic bold 1em/0.5em "Palatino Linotype","Book Antiqua",serif;
+    text-indent: 1cm;
+}
+div.latin {
+    background-color: wheat;
+    color: fuchsia;
+}
+div.english {
+    background-color: yellowgreen;
+    color: darkgreen;
+}

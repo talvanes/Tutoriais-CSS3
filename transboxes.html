@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>Caixas de texto transparentes</title>
+    <meta charset="utf-8" />
+    
+<style>
+    html, body {
+        margin: 0; padding: 0;
+        width: 100%; height: 100%;
+        background-color: rgb(23,12,45);
+        color: inherit;
+    }
+    /* Plano de fundo */
+    div.fundo {
+        width: 500px; height: 240px;
+        margin-left: auto; margin-right: auto;
+        border: medium solid rgb(200,254,220);
+        background: url('./imagens/fundo1.jpg') no-repeat;
+    }
+    div.fundo2 {
+        width: 500px; height: 240px;
+        margin-left: auto; margin-right: auto;
+        border: medium solid rgb(0,54,20);
+        background: url('./imagens/fundo2.jpg') no-repeat;
+    }
+    /* Caixa transpaente */
+    div.transbox {
+        width: auto; height: 180px;
+        margin: 30px 50px;
+        border: thin solid rgb(100,169,130);
+        background-color: rgb(220,250,240);
+        overflow: auto;
+        /* Alpha */
+        opacity: 0.5;
+        filter:alpha(opacity=50); /* Para IE8 e anterior */
+    }
+    /* Algum texto na caixa de texto */
+    div.transbox p {
+        margin: 1em 1.2em;
+        color: rgb(21,10,9);
+        text-align: justify;
+        font: lighter italic 1em;
+    }
+    div.transbox p:first-letter {
+        margin: 2px;
+        border: thin dotted rgb(100,100,200);
+        font: 900 italic 2.5em "Comic Sans MS",fantasy,sans-serif;
+        color: rgb(150,30,150);
+        float: left;
+        vertical-align: middle;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="fundo">
+    <div class="transbox">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </p>
+    </div>
+</div>
+<div class="fundo2">
+    <div class="transbox">
+        <p>
+            The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, 
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

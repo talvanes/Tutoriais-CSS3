@@ -1,0 +1,75 @@
+* {
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #666666;
+  color: black;
+}
+p {
+  font: lighter italic 1em/1.15em Verdana,Geneva,sans-serif;
+  color: #babaca;
+  width: 360px;
+  margin-top: 2em;
+}
+p:first-child {
+  margin-top: 0.25em;
+}
+#container {
+  width: 1000px;
+}
+#box1, #box2, #box3, #box4, #box5 {
+  width: 360px; height: 200px;
+  margin: 10px auto;
+  border: 2px solid #020202;
+}
+#box6, #box7 {
+  width: 360px; height: 200px;
+  margin: 20px;
+  border: 2px solid #020202;
+  float: left;
+}
+.linear-gradient {
+  background: -webkit-linear-gradient(top left, tomato 30%, azure 25%, peru 50%); /* Safari & Chrome - old versions */
+  background: -moz-linear-gradient(right bottom, tomato 30%, azure 25%, peru 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-linear-gradient(right bottom, tomato 30%, azure 25%, peru 50%); /* Opera until v.12.1 (Presto engine) */
+  background: linear-gradient(to right bottom, tomato 30%, azure 25%, peru 50%); /* Standard syntax (must be last) */
+}
+.repeating-linear-gradient {
+  background: -webkit-repeating-linear-gradient(top left, tomato 30%, azure 25%, peru 50%); /* Safari & Chrome - old versions */
+  background: -moz-repeating-linear-gradient(right bottom, tomato 30%, azure 25%, peru 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-repeating-linear-gradient(right bottom, tomato 30%, azure 25%, peru 50%); /* Opera until v.12.1 (Presto engine) */
+  background: repeating-linear-gradient(to right bottom, tomato 30%, azure 25%, peru 50%); /* Standard syntax (must be last) */
+}
+.radial-gradient-farthest-corner {
+  background: -webkit-radial-gradient(60px 40px, farthest-corner, circle, red 30%, yellow 25%, green 50%); /* Safari & Chrome - old versions */
+  background: -moz-radial-gradient(60px 40px, farthest-corner, circle, red 30%, yellow 25%, green 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-radial-gradient(60px 40px, farthest-corner, circle, red 30%, yellow 25%, green 50%); /* Opera until v.12.1 (Presto engine) */
+  background: radial-gradient(circle farthest-corner at 60px 40px, red 30%, yellow 25%, green 50%); /* Standard syntax (must be last) */
+}
+.radial-gradient-farthest-side {
+  background: -webkit-radial-gradient(60px 40px, farthest-side, circle, red 30%, yellow 25%, green 50%); /* Safari & Chrome - old versions */
+  background: -moz-radial-gradient(60px 40px, farthest-side, circle, red 30%, yellow 25%, green 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-radial-gradient(60px 40px, farthest-side, circle, red 30%, yellow 25%, green 50%); /* Opera until v.12.1 (Presto engine) */
+  background: radial-gradient(circle farthest-side at 60px 40px, red 30%, yellow 25%, green 50%); /* Standard syntax (must be last) */
+}
+.radial-gradient-closest-corner {
+  background: -webkit-radial-gradient(60px 40px, closest-corner, circle, red 30%, yellow 25%, green 50%); /* Safari & Chrome - old versions */
+  background: -moz-radial-gradient(60px 40px, closest-corner, circle, red 30%, yellow 25%, green 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-radial-gradient(60px 40px, closest-corner, circle, red 30%, yellow 25%, green 50%); /* Opera until v.12.1 (Presto engine) */
+  background: radial-gradient(circle closest-corner at 60px 40px, red 30%, yellow 25%, green 50%); /* Standard syntax (must be last) */
+}
+.radial-gradient-closest-side {
+  background: -webkit-radial-gradient(60px 40px, closest-side, circle, red 30%, yellow 25%, green 50%); /* Safari & Chrome - old versions */
+  background: -moz-radial-gradient(60px 40px, closest-side, circle, red 30%, yellow 25%, green 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-radial-gradient(60px 40px, closest-side, circle, red 30%, yellow 25%, green 50%); /* Opera until v.12.1 (Presto engine) */
+  background: radial-gradient(circle closest-side at 60px 40px, red 30%, yellow 25%, green 50%); /* Standard syntax (must be last) */
+}
+.repeating-radial-gradient {
+  background: -webkit-repeating-radial-gradient(60px 40px, red 30%, yellow 25%, green 50%); /* Safari & Chrome - old versions */
+  background: -moz-repeating-radial-gradient(60px 40px, red 30%, yellow 25%, green 50%); /* Firefox until v.3.6 and Mozilla-based browsers */
+  background: -o-repeating-radial-gradient(60px 40px, red 30%, yellow 25%, green 50%); /* Opera until v.12.1 (Presto engine) */
+  background: repeating-radial-gradient(60px 40px, red 30%, yellow 25%, green 50%); /* Standard syntax (must be last) */
+}

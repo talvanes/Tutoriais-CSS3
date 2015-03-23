@@ -1,0 +1,40 @@
+body {
+    background-color: inherit;
+    color: inherit;
+}
+caption {
+    font-family: "Book Antiqua", cursive, serif;
+    font-size: 0.8em;
+    caption-side: bottom;
+}
+#teams {
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: inherit;
+    color: inherit;
+    outline: #fd3d11 dotted thick;
+}
+#teams td, #teams th {
+    font-size: 1em;
+    border: 1px solid sienna;
+    padding: 5px 8px 5px 10px;
+}
+#teams th {
+    font-size: 1.2em;
+    text-align: left;
+    background-color: tomato;
+    color: khaki;
+}
+#teams .place {
+    background-color: orangered;
+    color: navajowhite;
+    width: 5%;
+}
+#teams .team {
+    width: 45%;
+}
+#teams tr.alt td {
+    background-color: linen;
+    color: darkorange;
+}

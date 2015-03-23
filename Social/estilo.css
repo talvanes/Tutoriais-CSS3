@@ -1,0 +1,91 @@
+html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+}
+
+/*
+ *  Lista de menus para navegação
+ *  */
+.navlist {
+    position: relative;
+    width: 313px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navlist li {
+    margin: 0; padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+}
+.navlist li, .navlist a {
+    display: block;
+    height: 53px;
+}
+
+/* Classes de botões */
+
+.twitter {
+    left: 20px;
+    width: 53px;
+    background: url('../imagens/social.png') 0 0;
+}
+.twitter a:hover {
+    background: url('../imagens/social.png') 0 -72px;
+}
+.twitter a:active {
+    background: url('../imagens/social.png') 0 -143px;
+}
+
+.facebook {
+    left: 93px;
+    width: 53px;
+    background: url('../imagens/social.png') -78px 0;
+}
+.facebook a:hover {
+    background: url('../imagens/social.png') -78px -72px;
+}
+.facebook a:active {
+    background: url('../imagens/social.png') -78px -143px;
+}
+
+.googleplus {
+    left: 166px;
+    width: 53px;
+    background: url('../imagens/social.png') -156px 0;
+}
+.googleplus a:hover {
+    background: url('../imagens/social.png') -156px -72px;
+}
+.googleplus a:active {
+    background: url('../imagens/social.png') -156px -143px;
+}
+
+.rss {
+    left: 239px;
+    width: 54px;
+    background: url('../imagens/social.png') -234px 0;
+}
+.rss a:hover {
+    background: url('../imagens/social.png') -234px -72px;
+}
+.rss a:active {
+    background: url('../imagens/social.png') -234px -143px;
+}
+
+/*
+ * Título
+ * */
+.follow_me {
+    background-color: rgb(212,122,211);
+    color: inherit;
+    padding: 1em 0 5.25em;
+}
+.follow_me h1 {
+    background-color: rgb(130,100,215);
+    color: rgb(221,221,221);
+    text-align: center;
+    margin: 0 1em;
+}

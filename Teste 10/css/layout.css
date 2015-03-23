@@ -1,0 +1,185 @@
+html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+}
+body {
+    background-color: linen;
+    color: mintcream;
+}
+
+/*
+ *  container(div)
+*/
+div .container {
+    width: 100%; height: 100%;
+}
+
+/*
+ *  header(div) and footer(div)
+*/
+div .header {
+    width: 100%;
+    height: 20%;
+    /*padding-left: 5%;*/
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    background-color: midnightblue;
+    color: inherit;
+    clear: both;
+}
+div .header h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    padding-left: 8%;
+}
+div .footer {
+    width: 100%;
+    height: 10%;
+    background-color: midnightblue;
+    color: inherit;
+    text-align: center;
+    clear: both;
+}
+div .footer p {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 1em;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 2em;
+}
+
+/*
+ *  body (sidebar left(nav), content and sidebar right(aside))
+ */
+div .body {
+    width: 100%; height: 600px;
+}
+
+div .nav {
+    width: 25%; height: 600px;
+    float: left;
+    border-right: 2px solid slateblue;
+    background-color: slategray;
+}
+/* side menu */
+div .nav ul {
+    margin: 0; padding: 0;
+    list-style-type: none;
+}
+div .nav ul li a {
+    display: block;
+    height: 30px;
+    padding: 0.8em;
+    color: tan;
+    text-decoration: none;
+    /*border-top: 2px solid slateblue;*/
+    border-left: 4px solid tomato;
+    /*border-bottom: 2px solid slateblue;*/
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+div .nav ul li a:hover {
+    background-color: salmon;
+    color: olivedrab;
+    border-left: medium solid darkslategray;
+}
+/* main content (section) */
+div .content {
+    width: 50%; height: 600px;
+    /*
+    padding-left: auto;
+    padding-right: auto;
+    */
+    float: left;
+    background-color: burlywood;
+    color: inherit;
+    overflow: auto;
+}
+
+/* as notícias do dia (artigos de blog, etc.)
+    a serem inseridas no conteúdo */
+div .feed {
+    margin: 0.8em;
+    border: medium solid darkolivegreen;
+    background-color: lightcyan;
+    color: darkslateblue;
+    min-height: 4em;
+}
+
+div .feed span {
+    display: inline-block;
+    background-color: firebrick;
+    color: white;
+    font: 400 oblique 2.5em cursive,sans-serif;
+    text-align: center;
+    width: 100%; height: 1.2em;
+}
+div .feed span:before {
+    content: url("../../imagens/remark 1.png");
+    float: left;
+}
+div .feed span:after {
+    content: url("../../imagens/remark 1.png");
+    float: right;
+}
+
+div .feed p {
+    display: block;
+    text-align: justify;
+    font: 1em cursive,sans-serif;
+}
+div .feed p:first-letter {
+    color: indigo;
+    font-size: 4em;
+    font-family: "Times New Roman",Times,serif;
+    font-variant: small-caps;
+    margin: 0 0.4em 0.4em;
+    padding: 0.2em;
+    border: 2px dotted darkslategray;
+    vertical-align: middle;
+    float: left;}
+
+
+/* barra lateral (rss, feeds, etc.) */
+div .aside {
+    width: 24.5%; height: 600px;
+    float: left;
+    border: 2px solid slateblue;
+    background-color: slategray;
+    color: gainsboro;
+    overflow: auto;
+}
+div .aside div {
+    margin: 1.2em 0.8em 1.5em;
+    text-align: justify;
+    font-family: cursive, sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+    font-stretch: semi-expanded;
+}
+div .aside div:first-line {
+    text-transform: capitalize;
+    font-weight: 500; font-style: normal;
+    color: slategray;
+    background-color: gainsboro;
+}
+div .aside div:first-letter {
+    background-color: inherit;
+    color: royalblue;
+    font-size: xx-large;
+    font-family: "Times New Roman",Times,serif;
+}
+/* Matches all abbr elements only in the first div element with class="aside" */
+div .aside div > abbr:first-child {
+    background-color: gainsboro;
+    color: slategray;
+    text-decoration: line-through;
+}
+/* Matches all first abbr elementes of every div element with class="aside" */
+div .aside div:first-child abbr {
+    background-color: linen;
+    color: fuchsia;
+    text-decoration: blink;
+}

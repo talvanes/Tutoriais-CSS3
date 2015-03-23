@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: inherit;
+}
+caption {
+    font-family: "Courier New", monospace;
+    font-size: 0.8em;
+    caption-side: bottom;
+}
+#teams {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    color: cornsilk;
+    outline: #9faddf dotted medium;
+}
+#teams td, #teams th {
+    font-size: 1em;
+    border: 1px solid darkviolet;
+    padding: 5px 8px 5px 10px;
+}
+#teams th {
+    font-size: 1.2em;
+    text-align: left;
+    background-color: lightgoldenrodyellow;
+    color: mediumvioletred;
+}
+#teams .place {
+    background-color: plum;
+    color: orchid;
+    width: 5%;
+}
+#teams .team {
+    width: 45%;
+}
+#teams tr.alt td {
+    background-color: deeppink;
+    color: tan;
+}
