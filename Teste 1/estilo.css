@@ -1,0 +1,134 @@
+/* Folha de estilos para a index.html (Teste 1) */
+body {
+    color: darkcyan;
+    background: white url(../imagens/figure2.jpg) no-repeat fixed right top;
+    font-size:100%;
+    line-height: 50px;
+    border: 1px solid #6642aa;
+    margin: 1.5cm 40% 1.5cm 2cm;
+    padding: 1cm 1.5cm 0.8cm;
+}
+h1 {
+    color: azure;
+    background-color: darkviolet;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 3px #121212;
+}
+p {
+    text-align: justify;
+    text-indent: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 1.5625em;
+    font-size: 0.875em;
+    word-spacing: 18px;
+}
+a:link {
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: darkgreen;
+}
+a:hover {
+    color: peru;
+    background-color: cyan;
+    text-decoration: underline;
+    text-transform: uppercase;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+a:active {
+    color: darkmagenta;
+}
+div {
+    color: azure;
+    background-color: darkkhaki;
+    text-align: justify;
+    font: bold italic small-caps 1.25em/1.5em "Comic Sans MS", cursive, sans-serif;
+}
+div.block1 {
+    border: 3px dotted rgb(23, 81, 123);
+    white-space: pre-line;
+}
+img {
+    border: 1px solid darkblue;
+    width: 100px;
+    height:50px;
+}
+
+/* Image Align */
+img.top {
+    vertical-align: top;
+}
+img.bottom {
+    vertical-align: bottom;
+}
+img.middle {
+    vertical-align: middle;
+}
+img.baseline {
+    vertical-align: baseline;
+}
+img.sub {
+    vertical-align: sub;
+}
+img.super {
+    vertical-align: super;
+}
+img.text-top {
+    vertical-align: text-top;
+}
+img.text-bottom {
+    vertical-align: text-bottom;
+}
+
+/* List Styles */
+ul {
+    line-height: normal;
+    list-style-position: inside;
+}
+ul.marker1 {
+    list-style-image: url("../imagens/marker 1.png");
+}
+ul.marker2 {
+    list-style-image: url("../imagens/marker 2.png");
+}
+/*
+ * Crossbrowser solution (w3schools.com)
+
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul li
+{
+    background-image: url(sqpurple.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    padding-left: 14px;
+}
+
+*/
+ol {
+    line-height: normal;
+}
+ol li {
+    list-style-position: outside;
+    color: midnightblue;
+}
+ol.number {
+    list-style-type: decimal-leading-zero;
+}
+ol.alpha {
+    list-style-type: lower-alpha;
+}
+ol.roman {
+    list-style-type: upper-roman;
+}
+
+
