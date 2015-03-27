@@ -1,0 +1,50 @@
+body {
+	color: azure;
+	text-align: center;
+}
+div {
+	width: 100px; height: 100px;
+	background-color: crimson;
+	margin: 10px 15px;
+	-webkit-transition: width 2s, height 4s, border-radius 1s, border 1s, background-color 2s, color 2s, -webkit-transform 5s;
+	-moz-transition: width 2s, height 4s, border-radius 1s, border 1s, background-color 2s, color 2s, -moz-transform 5s;
+	-o-transition: width 2s, height 4s, border-radius 1s, border 1s, background-color 2s, color 2s, -o-transform 5s;
+	transition: width 2s, height 4s, border-radius 1s, border 1s, background-color 2s, color 2s, transform 5s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	transition-delay: 1s;
+}
+div:hover {
+	width: 200px; height: 50px;
+	border-radius: 8px;
+	border: 2px solid midnightblue;
+	background-color: aquamarine;
+	color: darkblue;
+	-webkit-transform: rotate3d(10,10,10,-60deg);
+	-moz-transform: rotate3d(10,10,10,-60deg);
+	-o-transform: rotate3d(10,10,10,-60deg);
+	transform: rotate3d(10,10,10,-60deg);
+}
+
+.ease {
+	transition-timing-function: ease;
+}
+.linear {
+	transition-timing-function: linear;
+}
+.ease-in {
+	transition-timing-function: ease-in;
+}
+.ease-out {
+	transition-timing-function: ease-out
+}
+.ease-in-out {
+	transition-timing-function: ease-in-out;
+}
+.step-start {
+	transition-timing-function: step-start;
+}
+.step-end {
+	transition-timing-function: step-end;
+}
