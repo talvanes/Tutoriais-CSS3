@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    border-radius:60px;
+    -webkit-animation: example 2s linear infinite reverse;
+    -moz-animation: example 2s linear 2s infinite reverse;
+		-o-animation: example 2s linear 2s infinite reverse;
+		animation: example 2s linear 2s infinite reverse;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color: red; border-radius:60px;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue; border-radius:0;}
+    75%  {background-color: green; }
+    100% {background-color: red; border-radius:60px;}
+}
+
+/* Firefox */
+@-moz-keyframes example {
+    0%   {background-color: red; border-radius:60px;}
+    25%  {background-color: yellow; }
+    50%  {background-color: blue; border-radius:0;}
+    75%  {background-color: green; }
+    100% {background-color: red; border-radius:60px;}
+}
+
+/* Opera (Presto) */
+@-o-keyframes example {
+    0%   {background-color: red; border-radius:60px;}
+    25%  {background-color: yellow; }
+    50%  {background-color: blue; border-radius:0;}
+    75%  {background-color: green; }
+    100% {background-color: red; border-radius:60px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red; border-radius:60px;}
+    25%  {background-color: yellow; }
+    50%  {background-color: blue; border-radius:0;}
+    75%  {background-color: green; }
+    100% {background-color: red; border-radius:60px;}
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
